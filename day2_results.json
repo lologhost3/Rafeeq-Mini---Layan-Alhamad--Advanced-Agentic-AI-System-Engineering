@@ -1,0 +1,45 @@
+{
+  "day": 2,
+  "public_tests_passed": true,
+  "learner_checks_complete": true,
+  "all_passed": true,
+  "learner_checks": {
+    "6": true,
+    "7": true,
+    "8": true,
+    "9": true,
+    "10": true
+  },
+  "tests": [
+    {
+      "test": "test_memory_scope",
+      "passed": true,
+      "latency_ms": 157.65,
+      "tail": "....\n----------------------------------------------------------------------\nRan 4 tests in 0.005s\n\nOK\n"
+    },
+    {
+      "test": "test_routing",
+      "passed": true,
+      "latency_ms": 131.05,
+      "tail": "...\n----------------------------------------------------------------------\nRan 3 tests in 0.001s\n\nOK\n"
+    },
+    {
+      "test": "test_refund_gate",
+      "passed": true,
+      "latency_ms": 119.04,
+      "tail": ".......\n----------------------------------------------------------------------\nRan 7 tests in 0.002s\n\nOK\n"
+    },
+    {
+      "test": "test_reflection_bound",
+      "passed": true,
+      "latency_ms": 123.57,
+      "tail": "...\n----------------------------------------------------------------------\nRan 3 tests in 0.001s\n\nOK\n"
+    }
+  ],
+  "memory": {
+    "thread_id": "session-memory-demo",
+    "turn_1_order": "TW-26003",
+    "turn_2_recalled_order": "TW-26003",
+    "raw_messages_stored": false
+  }
+}
