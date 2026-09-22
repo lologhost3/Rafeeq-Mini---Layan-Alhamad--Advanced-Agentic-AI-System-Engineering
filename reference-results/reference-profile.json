@@ -1,0 +1,279 @@
+{
+  "schema_version": "1.0",
+  "profile_id": "rafeeq-mini-observable-contracts",
+  "lab_version": "0.9.0-rc3",
+  "contract_kind": "observable-results-only",
+  "labels": {
+    "en": "Validated reference outputs",
+    "ar": "مخرجات مرجعية متحققة"
+  },
+  "source_of_truth": {
+    "notebook": "notebooks/Rafeeq_Mini_Capstone.ipynb",
+    "builder": "scripts/build_notebook.py",
+    "cells": [
+      "C0_ENV_DOCTOR",
+      "C9_DAY1_GATE",
+      "C20_DAY2_GATE",
+      "C23_GUARD_FIX_RETEST",
+      "C26_ONE_OPTIMIZATION",
+      "C27_SCORECARD",
+      "C28_READINESS",
+      "C29_EXPORT_SAFETY_CHECK"
+    ]
+  },
+  "comparison_policy": {
+    "compare_declared_fields_only": true,
+    "case_match_key": "case_id",
+    "todo_match_key": "exercise",
+    "unordered_array_fields": [
+      "artifacts",
+      "known_limitations",
+      "risk_flags"
+    ],
+    "ordered_array_fields": [],
+    "numeric_tolerance": 1e-08,
+    "bounded_counters": {
+      "steps": {
+        "operator": "less_than_or_equal",
+        "value": 6
+      },
+      "transitions": {
+        "operator": "less_than_or_equal",
+        "value": 12
+      },
+      "handoffs": {
+        "operator": "less_than_or_equal",
+        "value": 2
+      },
+      "reflections": {
+        "operator": "less_than_or_equal",
+        "value": 1
+      }
+    },
+    "ignored_field_names": [
+      "generated_at_utc",
+      "run_id",
+      "export_id",
+      "assessment_run_id",
+      "approval_id",
+      "timestamp_utc",
+      "trace_id",
+      "span_id",
+      "parent_span_id",
+      "session_id",
+      "latency_ms",
+      "before_ms",
+      "after_ms",
+      "free_disk_mb",
+      "python",
+      "payload_files",
+      "sha256",
+      "size_bytes",
+      "tail",
+      "output_tail"
+    ],
+    "ignored_paths": [
+      "environment.payload_files",
+      "tests[*].latency_ms",
+      "tests[*].tail",
+      "scorecard.metrics.median_latency_ms",
+      "scorecard.metrics.p95_latency_ms",
+      "trace.records",
+      "learner_regression.case_id",
+      "learner_regression.asset",
+      "learner_regression.expected_flag",
+      "learner_regression.control",
+      "learner_regression.payload_length",
+      "manifest.files[*].sha256",
+      "manifest.files[*].size_bytes",
+      "dashboard.path",
+      "dashboard.renderer",
+      "archive.size_bytes",
+      "archive.entry_count"
+    ],
+    "status_labels": {
+      "match": {
+        "en": "Match",
+        "ar": "مطابق"
+      },
+      "review": {
+        "en": "Review",
+        "ar": "راجع"
+      },
+      "needs_fix": {
+        "en": "Needs fix",
+        "ar": "يحتاج إصلاحًا"
+      }
+    }
+  },
+  "scopes": [
+    {
+      "id": "day1",
+      "labels": {
+        "en": "Day 1 · Core and tools",
+        "ar": "اليوم الأول · النواة والأدوات"
+      },
+      "reference_file": "day1_expected.json",
+      "source_cells": [
+        "C0_ENV_DOCTOR",
+        "C9_DAY1_GATE"
+      ],
+      "learner_files": [
+        "reports/checkpoints/doctor_report.json",
+        "reports/checkpoints/day1_results.json"
+      ],
+      "section_sources": {
+        "environment": {
+          "file": "reports/checkpoints/doctor_report.json",
+          "path": "$"
+        },
+        "gate": {
+          "file": "reports/checkpoints/day1_results.json",
+          "path": "$"
+        }
+      },
+      "revisit_cells": [
+        "C0_ENV_DOCTOR",
+        "C1_ARCHITECTURE",
+        "C2_TYPED_STATE",
+        "C3_BOUNDED_GRAPH",
+        "C4_REASONING_TRACES",
+        "C5_REACT_ORDERS",
+        "C6_TOOL_SCHEMA",
+        "C7_MCP_SERVER",
+        "C8_MCP_CLIENT",
+        "C9_DAY1_GATE"
+      ]
+    },
+    {
+      "id": "day2",
+      "labels": {
+        "en": "Day 2 · Memory and orchestration",
+        "ar": "اليوم الثاني · الذاكرة والتنسيق"
+      },
+      "reference_file": "day2_expected.json",
+      "source_cells": [
+        "C20_DAY2_GATE"
+      ],
+      "learner_files": [
+        "reports/checkpoints/day2_memory_results.json",
+        "reports/checkpoints/day2_results.json"
+      ],
+      "section_sources": {
+        "memory": {
+          "file": "reports/checkpoints/day2_memory_results.json",
+          "path": "$"
+        },
+        "gate": {
+          "file": "reports/checkpoints/day2_results.json",
+          "path": "$"
+        }
+      },
+      "revisit_cells": [
+        "C11_SESSION_MEMORY",
+        "C12_SCOPED_RECALL",
+        "C13_POLICY_RETRIEVAL",
+        "C14_SPECIALISTS",
+        "C15_SUPERVISOR",
+        "C16_TYPED_HANDOFF",
+        "C17_PLAN_EXECUTE",
+        "C18_REFUND_GATE",
+        "C19_INTERRUPT_RESUME",
+        "C20_DAY2_GATE"
+      ]
+    },
+    {
+      "id": "day3",
+      "labels": {
+        "en": "Day 3 · Security, evaluation and readiness",
+        "ar": "اليوم الثالث · الأمن والتقييم والجاهزية"
+      },
+      "reference_file": "day3_expected.json",
+      "source_cells": [
+        "C23_GUARD_FIX_RETEST",
+        "C26_ONE_OPTIMIZATION",
+        "C27_SCORECARD",
+        "C28_READINESS"
+      ],
+      "learner_files": [
+        "reports/checkpoints/day3_security_retest.json",
+        "reports/checkpoints/day3_results.json",
+        "reports/assessment_results.json"
+      ],
+      "section_sources": {
+        "security_retest": {
+          "file": "reports/checkpoints/day3_security_retest.json",
+          "path": "$"
+        },
+        "optimization": {
+          "file": "reports/assessment_results.json",
+          "path": "$.optimization"
+        },
+        "scorecard": {
+          "file": "reports/assessment_results.json",
+          "paths": [
+            "$.metrics",
+            "$.critical_gates",
+            "$.learning_gates",
+            "$.all_critical_gates_passed",
+            "$.all_learning_gates_passed",
+            "$.cases"
+          ]
+        },
+        "readiness": {
+          "files": [
+            "reports/checkpoints/day3_results.json",
+            "reports/assessment_results.json"
+          ],
+          "paths": [
+            "$",
+            "$.readiness"
+          ]
+        }
+      },
+      "revisit_cells": [
+        "C21_THREAT_MODEL",
+        "C22_ATTACK_SUITE",
+        "C23_GUARD_FIX_RETEST",
+        "C24_REFLECTION_GATE",
+        "C25_TRACE_EVAL",
+        "C26_ONE_OPTIMIZATION",
+        "C27_SCORECARD",
+        "C28_READINESS"
+      ]
+    },
+    {
+      "id": "final",
+      "labels": {
+        "en": "Final · Safe learner export",
+        "ar": "النهائي · تصدير المتدرب الآمن"
+      },
+      "reference_file": "final_export_expected.json",
+      "source_cells": [
+        "C29_EXPORT_SAFETY_CHECK"
+      ],
+      "learner_files": [
+        "reports/checkpoints/learner_todo_status.json",
+        "reports/submission_manifest.json"
+      ],
+      "section_sources": {
+        "learner_todo_status": {
+          "file": "reports/checkpoints/learner_todo_status.json",
+          "path": "$"
+        },
+        "precheck_output": {
+          "source": "C29 printed JSON",
+          "path": "$",
+          "normalization": "c29_stdout_contract"
+        },
+        "enabled_export.manifest": {
+          "file": "reports/submission_manifest.json",
+          "path": "$"
+        }
+      },
+      "revisit_cells": [
+        "C29_EXPORT_SAFETY_CHECK"
+      ]
+    }
+  ]
+}

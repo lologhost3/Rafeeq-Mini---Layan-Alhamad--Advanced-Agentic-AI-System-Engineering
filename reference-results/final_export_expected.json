@@ -1,0 +1,147 @@
+{
+  "schema_version": "1.0",
+  "scope": "final",
+  "contract_kind": "observable-results-only",
+  "labels": {
+    "en": "Final validated output · Safe learner export",
+    "ar": "المخرجات النهائية المتحققة · تصدير المتدرب الآمن"
+  },
+  "source_cells": [
+    "C29_EXPORT_SAFETY_CHECK"
+  ],
+  "learner_files": [
+    "reports/checkpoints/learner_todo_status.json",
+    "reports/submission_manifest.json"
+  ],
+  "expected": {
+    "learner_todo_status": {
+      "schema_version": "1.0",
+      "completed": 14,
+      "total": 14,
+      "all_complete": true,
+      "items": [
+        {
+          "exercise": "TODO-1",
+          "passed": true
+        },
+        {
+          "exercise": "TODO-2",
+          "passed": true
+        },
+        {
+          "exercise": "TODO-3",
+          "passed": true
+        },
+        {
+          "exercise": "TODO-4",
+          "passed": true
+        },
+        {
+          "exercise": "TODO-5",
+          "passed": true
+        },
+        {
+          "exercise": "TODO-6",
+          "passed": true
+        },
+        {
+          "exercise": "TODO-7",
+          "passed": true
+        },
+        {
+          "exercise": "TODO-8",
+          "passed": true
+        },
+        {
+          "exercise": "TODO-9",
+          "passed": true
+        },
+        {
+          "exercise": "TODO-10",
+          "passed": true
+        },
+        {
+          "exercise": "TODO-11",
+          "passed": true
+        },
+        {
+          "exercise": "TODO-12",
+          "passed": true
+        },
+        {
+          "exercise": "TODO-13",
+          "passed": true
+        },
+        {
+          "exercise": "TODO-14",
+          "passed": true
+        }
+      ]
+    },
+    "precheck_output": {
+      "contract_source": "normalized_c29_stdout",
+      "precheck": {
+        "required_outputs_present": true,
+        "configured_secret_scan_no_match": true,
+        "forbidden_paths_absent": true,
+        "critical_gates_passed": true,
+        "trace_redacted": true,
+        "reports_complete": true,
+        "individual_file_size_limit": true,
+        "notebook_excluded_from_manifest_hash": true,
+        "manual_notebook_upload_required": true,
+        "student_submission_ci_installed": true,
+        "canonical_precheck_passed": true,
+        "learner_checks_complete": true,
+        "learner_todo_status_valid": true,
+        "manual_notebook_step_acknowledged": true,
+        "submission_validator_present": true,
+        "submission_workflow_exact": true,
+        "submission_workflow_included_once": true,
+        "public_allowlist_nonempty": true
+      },
+      "all_passed": true,
+      "files": {
+        "operator": "greater_than",
+        "value": 0
+      },
+      "missing_outputs": [],
+      "forbidden_paths": [],
+      "secret_findings": []
+    },
+    "default_export": {
+      "marker": "FINAL_EXPORT_SKIPPED",
+      "zip_created": false
+    },
+    "enabled_export": {
+      "marker_prefix": "FINAL_EXPORT_CREATED:",
+      "manifest": {
+        "schema_version": "1.0",
+        "expected_final_commit_message": "feat: submit Rafeeq Mini capstone",
+        "completed_notebook_upload_required": true,
+        "all_passed": true,
+        "learner_todo_status_matches_checkpoint": true,
+        "safety_checks_all_true": true
+      },
+      "zip": {
+        "entries_relation": "selected_files_plus_manifest",
+        "unique_paths": true,
+        "manifest_path": "reports/submission_manifest.json",
+        "completed_notebook_added_separately": true
+      }
+    }
+  },
+  "ignored_as_variable": [
+    "learner_todo_status.generated_at_utc",
+    "manifest.generated_at_utc",
+    "manifest.export_id",
+    "manifest.assessment_run_id",
+    "manifest.files[*].sha256",
+    "manifest.files[*].size_bytes",
+    "selected file count and ZIP entry count",
+    "ZIP byte size",
+    "manifest file ordering",
+    "absolute runtime path",
+    "JSON key order"
+  ]
+}

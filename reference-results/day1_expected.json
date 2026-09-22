@@ -1,0 +1,78 @@
+{
+  "schema_version": "1.0",
+  "scope": "day1",
+  "contract_kind": "observable-results-only",
+  "labels": {
+    "en": "Day 1 validated output · Core and tools",
+    "ar": "مخرجات اليوم الأول المتحققة · النواة والأدوات"
+  },
+  "source_cells": [
+    "C0_ENV_DOCTOR",
+    "C9_DAY1_GATE"
+  ],
+  "learner_files": [
+    "reports/checkpoints/doctor_report.json",
+    "reports/checkpoints/day1_results.json"
+  ],
+  "expected": {
+    "environment": {
+      "all_passed": true,
+      "python_ok": true,
+      "workspace_writable": true,
+      "required_files_ok": true,
+      "api_key_required": false,
+      "network_required": false,
+      "llm_mode": "stub",
+      "runtime": {
+        "status": "ready",
+        "llm_mode": "stub",
+        "network_required": false,
+        "orders_loaded": 24,
+        "policies_loaded": 6,
+        "memories_loaded": 8,
+        "limits": {
+          "steps": 6,
+          "transitions": 12,
+          "handoffs": 2,
+          "reflections": 1
+        }
+      }
+    },
+    "gate": {
+      "day": 1,
+      "llm_mode": "stub",
+      "public_tests_passed": true,
+      "learner_checks_complete": true,
+      "all_passed": true,
+      "learner_checks": {
+        "1": true,
+        "2": true,
+        "3": true,
+        "4": true,
+        "5": true
+      },
+      "tests": [
+        {
+          "test": "test_state_contract",
+          "passed": true
+        },
+        {
+          "test": "test_tool_scope",
+          "passed": true
+        },
+        {
+          "test": "test_mcp_smoke",
+          "passed": true
+        }
+      ]
+    }
+  },
+  "ignored_as_variable": [
+    "environment.python",
+    "environment.free_disk_mb",
+    "environment.payload_files",
+    "gate.tests[*].latency_ms",
+    "gate.tests[*].tail",
+    "JSON key order"
+  ]
+}

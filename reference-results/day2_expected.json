@@ -1,0 +1,60 @@
+{
+  "schema_version": "1.0",
+  "scope": "day2",
+  "contract_kind": "observable-results-only",
+  "labels": {
+    "en": "Day 2 validated output · Memory and orchestration",
+    "ar": "مخرجات اليوم الثاني المتحققة · الذاكرة والتنسيق"
+  },
+  "source_cells": [
+    "C20_DAY2_GATE"
+  ],
+  "learner_files": [
+    "reports/checkpoints/day2_memory_results.json",
+    "reports/checkpoints/day2_results.json"
+  ],
+  "expected": {
+    "memory": {
+      "thread_id": "session-memory-demo",
+      "turn_1_order": "TW-26003",
+      "turn_2_recalled_order": "TW-26003",
+      "raw_messages_stored": false
+    },
+    "gate": {
+      "day": 2,
+      "public_tests_passed": true,
+      "learner_checks_complete": true,
+      "all_passed": true,
+      "learner_checks": {
+        "6": true,
+        "7": true,
+        "8": true,
+        "9": true,
+        "10": true
+      },
+      "tests": [
+        {
+          "test": "test_memory_scope",
+          "passed": true
+        },
+        {
+          "test": "test_routing",
+          "passed": true
+        },
+        {
+          "test": "test_refund_gate",
+          "passed": true
+        },
+        {
+          "test": "test_reflection_bound",
+          "passed": true
+        }
+      ]
+    }
+  },
+  "ignored_as_variable": [
+    "gate.tests[*].latency_ms",
+    "gate.tests[*].tail",
+    "JSON key order"
+  ]
+}
