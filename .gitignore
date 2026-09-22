@@ -1,0 +1,39 @@
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Jupyter and Colab
+.ipynb_checkpoints/
+*.nbconvert.ipynb
+
+# Editors and operating systems
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Temporary learner evidence and export archives
+reports/checkpoints/*
+!reports/checkpoints/.gitignore
+rafeeq-mini-submission.zip
+
+# Build and cache output
+dist/
+build/
+.cache/
+coverage/
+.rafeeq-mini/
