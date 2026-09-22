@@ -1,14 +1,14 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-09-22T06:26:15.818969+00:00",
-  "export_id": "export-76ffe572482c8828",
-  "assessment_run_id": "run-9390b4c4cfc145b4",
-  "assessment_sha256": "fa4f3feaa1820ea904ce14365d6781fb788d35f8c0eee69b60d8a64c17c413e9",
+  "generated_at_utc": "2026-09-22T08:37:36.551143+00:00",
+  "export_id": "export-ac88c82fdd275d6c",
+  "assessment_run_id": "run-0cf6121b664a4712",
+  "assessment_sha256": "52e2cd9daf06b14be4e90424c74a191752725cc37d31c4e7b44eab64172d85ab",
   "expected_final_commit_message": "feat: submit Rafeeq Mini capstone",
   "completed_notebook_upload_required": true,
   "learner_todo_status": {
     "schema_version": "1.0",
-    "generated_at_utc": "2026-09-22T06:26:15.100723+00:00",
+    "generated_at_utc": "2026-09-22T08:37:36.058972+00:00",
     "completed": 14,
     "total": 14,
     "all_complete": true,
@@ -254,17 +254,17 @@
     },
     {
       "path": "reports/PROJECT_REPORT.md",
-      "sha256": "2d0c13136a66ac65fdb6993e77a7fd7ff13c37e53945cc74d58c3d1ab450db36",
-      "size_bytes": 4123
+      "sha256": "ecee03e27b3e0a1b4dd7aafb1d2100a35e2f8ae7b74d89b3b6f5b19c988e5804",
+      "size_bytes": 4121
     },
     {
       "path": "reports/SECURITY_ASSESSMENT.md",
-      "sha256": "2606746959a4e3575e5169cc8f3f5a350b4eebbe0973ea63418e98b481ece9eb",
+      "sha256": "f1234fe6456f802b26d5b0520e969d83cfb948b0a04fc52bf3ea534fa822cd3d",
       "size_bytes": 2470
     },
     {
       "path": "reports/assessment_results.json",
-      "sha256": "fa4f3feaa1820ea904ce14365d6781fb788d35f8c0eee69b60d8a64c17c413e9",
+      "sha256": "52e2cd9daf06b14be4e90424c74a191752725cc37d31c4e7b44eab64172d85ab",
       "size_bytes": 11919
     },
     {
@@ -299,8 +299,8 @@
     },
     {
       "path": "reports/trace.jsonl",
-      "sha256": "eed454e6d64bb615e875297f338edc1dfd63c7f187fd76cbcb738cd246c7960e",
-      "size_bytes": 190558
+      "sha256": "a4ea6f1b3b4860f6f0f6be346de5b7862f39e2c817cfd41c974c4d8da1dd011b",
+      "size_bytes": 87626
     },
     {
       "path": "requirements-colab.txt",
@@ -573,7 +573,8 @@
     "submission_validator_present": true,
     "submission_workflow_exact": true,
     "submission_workflow_included_once": true,
-    "public_allowlist_nonempty": true
+    "public_allowlist_nonempty": true,
+    "learner_todos_14_of_14": true
   },
   "all_passed": true,
   "excluded": [

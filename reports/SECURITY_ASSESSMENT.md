@@ -31,7 +31,7 @@
 - حاجز المتدرب المحلي دليل على أسلوب الاختبار أولًا، وليس حدًا أمنيًا إنتاجيًا.
 
 ## Final assessment linkage | ربط التقييم النهائي
-- Assessment run ID | معرّف التقييم: `run-9390b4c4cfc145b4`
+- Assessment run ID | معرّف التقييم: `run-0cf6121b664a4712`
 - Final readiness | الجاهزية النهائية: READY
 - Final gate | البوابة النهائية: True
 - Assessment artifact | ملف التقييم: `reports/assessment_results.json`
