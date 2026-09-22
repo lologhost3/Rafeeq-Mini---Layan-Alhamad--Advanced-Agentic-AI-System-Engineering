@@ -1,0 +1,117 @@
+name: Lab help · مساعدة اللاب
+description: Request reproducible public help without secrets, real data, or private submission details · اطلب مساعدة عامة قابلة لإعادة التنفيذ دون أسرار أو بيانات حقيقية أو تفاصيل تسليم خاصة
+title: "[LAB HELP] "
+labels:
+  - help-wanted
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this public form only for a sanitized technical question about the learner lab.
+
+        استخدم هذا النموذج العام لسؤال تقني منقح عن لاب المتدرب فقط.
+
+        **Do not post:** passwords, one-time codes, tokens, API keys, cookies, `.env` values, private links, real customer/employee/trainee data, full browser screenshots, vulnerabilities, grades, or private hand-in details. Follow `SECURITY.md` and the instructor's private channel for sensitive matters.
+
+        **يمنع نشر:** كلمات المرور أو رموز التحقق أو Tokens أو مفاتيح API أو Cookies أو قيم `.env` أو الروابط الخاصة أو بيانات حقيقية لعميل/موظف/متدرب أو صور المتصفح الكاملة أو الثغرات أو الدرجات أو تفاصيل التسليم الخاصة. اتبع `SECURITY.md` وقناة المدربة الخاصة للموضوعات الحساسة.
+
+  - type: dropdown
+    id: day
+    attributes:
+      label: Day · اليوم
+      options:
+        - Day 1 · اليوم الأول
+        - Day 2 · اليوم الثاني
+        - Day 3 · اليوم الثالث
+        - Setup or GitHub · التجهيز أو GitHub
+    validations:
+      required: true
+
+  - type: input
+    id: cell
+    attributes:
+      label: Cell or workflow step · الخلية أو خطوة سير العمل
+      description: Use a cell ID such as C18, or a public step name such as Learner submission quality · استخدم رقم خلية مثل C18 أو اسم خطوة عامة مثل Learner submission quality
+      placeholder: C18_REFUND_GATE
+    validations:
+      required: true
+
+  - type: input
+    id: last_gate
+    attributes:
+      label: Last passed gate · آخر بوابة ناجحة
+      placeholder: C9 all_passed=true / C20 all_passed=true / none
+    validations:
+      required: true
+
+  - type: textarea
+    id: first_error
+    attributes:
+      label: First useful sanitized error · أول خطأ مفيد ومنقح
+      description: Paste only the first useful error line or public failure code; remove paths, account details, and private values · ألصق أول سطر خطأ مفيد أو رمز فشل عام فقط، واحذف المسارات وتفاصيل الحساب والقيم الخاصة
+      render: text
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior · السلوك المتوقع
+      placeholder: What should the cell or check have produced? · ماذا كان يفترض أن تنتج الخلية أو الفحص؟
+    validations:
+      required: true
+
+  - type: textarea
+    id: observed
+    attributes:
+      label: Actual behavior · السلوك الفعلي
+      placeholder: Describe the observable result without raw records or private data · صف النتيجة المرصودة دون سجلات خام أو بيانات خاصة
+    validations:
+      required: true
+
+  - type: textarea
+    id: attempts
+    attributes:
+      label: Safe steps already tried · المحاولات الآمنة المنفذة
+      placeholder: |
+        1. Reran from C0 in order
+        2. Rechecked the learner TODO
+        3. Reran the gate
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: environment
+    attributes:
+      label: Environment · البيئة
+      options:
+        - label: Google Colab Free with CPU · كولاب المجاني مع CPU
+          required: true
+        - label: Mandatory `LLM_MODE=stub` path · المسار الإلزامي `LLM_MODE=stub`
+          required: true
+
+  - type: dropdown
+    id: runtime_reset
+    attributes:
+      label: Did the Colab runtime reset? · هل أعيد ضبط بيئة كولاب؟
+      options:
+        - No · لا
+        - Yes · نعم
+        - Not sure · غير متأكد
+        - Not applicable (GitHub/setup) · لا ينطبق (GitHub/التجهيز)
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: safety_confirmation
+    attributes:
+      label: Public-post safety declaration · إقرار سلامة النشر العام
+      options:
+        - label: I removed passwords, codes, tokens, API keys, cookies, `.env` values, and private links · حذفت كلمات المرور والرموز ومفاتيح API وCookies وقيم `.env` والروابط الخاصة
+          required: true
+        - label: I used synthetic fixture IDs only and included no real customer, employee, trainee, order, payment, or support data · استخدمت معرفات مصطنعة فقط ولم أدرج بيانات حقيقية لعميل أو موظف أو متدرب أو طلب أو دفعة أو دعم
+          required: true
+        - label: I included no vulnerability details, grade dispute, private hand-in detail, solution, hidden test, or instructor-only material · لم أدرج تفاصيل ثغرة أو اعتراض درجة أو تفاصيل تسليم خاصة أو حلًا أو اختبارًا خفيًا أو مادة خاصة بالمدربة
+          required: true
+        - label: I understand this issue and its attachments are public · أفهم أن هذا الطلب ومرفقاته عامة
+          required: true
