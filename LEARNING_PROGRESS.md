@@ -10,7 +10,7 @@
 
 | Field · الحقل | Value · القيمة |
 |---|---|
-| Public learner ID · المعرّف العام | `[learner_id or GitHub username]` |
+| Public learner ID · المعرّف العام | `[lologhost3]` |
 | Course · الدورة | Advanced Agentic AI Systems Engineering · هندسة أنظمة الذكاء الاصطناعي التوكيلي المتقدمة |
 | Project · المشروع | Rafeeq Mini · رفيق المصغّر |
 
