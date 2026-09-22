@@ -1,0 +1,35 @@
+name: Learner submission quality
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: Validate learner submission
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    env:
+      LLM_MODE: stub
+      PYTHONDONTWRITEBYTECODE: "1"
+    steps:
+      - name: Check out submission
+        uses: actions/checkout@v4
+      - name: Select Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run public tests
+        run: python -m unittest discover -s tests/public -p "test_*.py" -v
+      - name: Validate completed submission
+        run: python scripts/validate_submission.py --write-receipt
+      - name: Upload cryptographic submission receipt
+        uses: actions/upload-artifact@v4
+        with:
+          name: rafeeq-submission-receipt
+          path: reports/submission_receipt.json
+          if-no-files-found: error
