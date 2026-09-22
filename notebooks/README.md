@@ -1,1 +1,0 @@
-Rafeeq Mini capstone notebook.
