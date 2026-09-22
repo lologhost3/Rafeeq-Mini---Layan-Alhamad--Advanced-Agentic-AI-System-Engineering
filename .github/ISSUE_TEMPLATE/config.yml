@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security and sensitive reporting · الإبلاغ الأمني والحساس
+    url: https://github.com/almiyead-rgb/rafeeq-agentic-ai-labs/security/policy
+    about: Do not post secrets, vulnerabilities, private links, personal data, grades, or private submission details publicly; follow the private reporting policy. · لا تنشر الأسرار أو الثغرات أو الروابط الخاصة أو البيانات الشخصية أو الدرجات أو تفاصيل التسليم الخاصة علنًا؛ اتبع سياسة الإبلاغ الخاص.
