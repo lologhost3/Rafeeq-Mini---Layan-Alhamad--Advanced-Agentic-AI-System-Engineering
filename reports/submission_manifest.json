@@ -1,14 +1,14 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-09-22T08:37:36.551143+00:00",
-  "export_id": "export-ac88c82fdd275d6c",
-  "assessment_run_id": "run-0cf6121b664a4712",
-  "assessment_sha256": "52e2cd9daf06b14be4e90424c74a191752725cc37d31c4e7b44eab64172d85ab",
+  "generated_at_utc": "2026-09-22T08:58:54.029902+00:00",
+  "export_id": "export-e4fa667c908f4ee9",
+  "assessment_run_id": "run-03f9fc281938446c",
+  "assessment_sha256": "d7f9934a2168cd9af3b7705912b5e83430b508dc74224a911dad31d016c06976",
   "expected_final_commit_message": "feat: submit Rafeeq Mini capstone",
   "completed_notebook_upload_required": true,
   "learner_todo_status": {
     "schema_version": "1.0",
-    "generated_at_utc": "2026-09-22T08:37:36.058972+00:00",
+    "generated_at_utc": "2026-09-22T08:58:53.859440+00:00",
     "completed": 14,
     "total": 14,
     "all_complete": true,
@@ -254,18 +254,18 @@
     },
     {
       "path": "reports/PROJECT_REPORT.md",
-      "sha256": "ecee03e27b3e0a1b4dd7aafb1d2100a35e2f8ae7b74d89b3b6f5b19c988e5804",
+      "sha256": "d085a676c593eee9f1b1c49def8949dedadab439ae8f9c504f5a2ffe2cb84f65",
       "size_bytes": 4121
     },
     {
       "path": "reports/SECURITY_ASSESSMENT.md",
-      "sha256": "f1234fe6456f802b26d5b0520e969d83cfb948b0a04fc52bf3ea534fa822cd3d",
+      "sha256": "b207ca5f613ce02e16619214e275605100101d90124feb515c14e97392de0854",
       "size_bytes": 2470
     },
     {
       "path": "reports/assessment_results.json",
-      "sha256": "52e2cd9daf06b14be4e90424c74a191752725cc37d31c4e7b44eab64172d85ab",
-      "size_bytes": 11919
+      "sha256": "d7f9934a2168cd9af3b7705912b5e83430b508dc74224a911dad31d016c06976",
+      "size_bytes": 11916
     },
     {
       "path": "reports/monitoring_dashboard.png",
@@ -299,7 +299,7 @@
     },
     {
       "path": "reports/trace.jsonl",
-      "sha256": "a4ea6f1b3b4860f6f0f6be346de5b7862f39e2c817cfd41c974c4d8da1dd011b",
+      "sha256": "d84f6a009cce14bb5f4f8633b69dd0c6178a0f14f9692e3580b382053152927d",
       "size_bytes": 87626
     },
     {

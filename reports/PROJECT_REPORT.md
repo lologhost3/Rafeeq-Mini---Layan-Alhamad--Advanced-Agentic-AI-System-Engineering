@@ -4,8 +4,8 @@
 - SDAIA Academy GitHub external reference | مرجع أكاديمية سدايا على GitHub: https://github.com/SDAIAAcademy
 
 ## Run and outcome | التشغيل والنتيجة
-- Assessment run ID | معرّف تشغيل التقييم: `run-0cf6121b664a4712`
-- Generated UTC | وقت الإنشاء: 2026-09-22T08:30:55.805685+00:00
+- Assessment run ID | معرّف تشغيل التقييم: `run-03f9fc281938446c`
+- Generated UTC | وقت الإنشاء: 2026-09-22T08:58:53.653757+00:00
 - Decision | القرار: READY
 - Evidence cells | خلايا الأدلة: C9, C20, C23, C26, C27, C28
 
@@ -22,7 +22,7 @@
 - Security case IDs | معرّفات الحالات الأمنية: SEC-01, SEC-02, SEC-03, SEC-04, SEC-05, SEC-06, SEC-07, SEC-08
 - Functional accuracy | الدقة الوظيفية: 100%
 - Security pass rate | نسبة اجتياز الأمن: 100%
-- Median latency | وسيط الزمن: 1.246 ms
+- Median latency | وسيط الزمن: 1.729 ms
 - Trace records | سجلات التتبع: 132
 - Trace parent integrity | سلامة روابط التتبع: True
 - Runtime | بيئة التشغيل: offline deterministic stub on free CPU
@@ -39,10 +39,10 @@ Thin supervisor, OrdersAgent, RefundAgent, scoped memory, current-policy retriev
 
 ## Optimization evidence | دليل التحسين
 - Optimization | التحسين: current_policy_cache
-- Before | قبل: 3.757 ms / 500 iterations
-- After | بعد: 0.386 ms / 500 iterations
+- Before | قبل: 1.798 ms / 500 iterations
+- After | بعد: 0.197 ms / 500 iterations
 - Cache hits / misses | إصابات / إخفاقات التخزين: 499 / 1
-- Learner trade-off and guardrail | مقايضة وضابط المتدرب: Measured trade-off: for 500 policy lookups, caching reduced runtime from 3.757 ms to 0.386 ms, but cached policy data can become stale. Guardrail: key the cache by locale, category, and active policy version, and never include customer data in the cache key.
+- Learner trade-off and guardrail | مقايضة وضابط المتدرب: Measured trade-off: for 500 policy lookups, caching reduced runtime from 1.798 ms to 0.197 ms, but cached policy data can become stale. Guardrail: key the cache by locale, category, and active policy version, and never include customer data in the cache key.
 
 ## Residual risks and limitations | المخاطر المتبقية والقيود
 Synthetic public data only; no real delivery, payment or customer system; production identity, policy, secrets and operations are out of scope.
