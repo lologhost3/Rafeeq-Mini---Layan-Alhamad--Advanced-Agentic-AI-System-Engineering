@@ -543,7 +543,6 @@ The final repository is also checked through the **Learner submission quality** 
 | [`reports/trace.jsonl`](reports/trace.jsonl) | Redacted structured trace |
 | [`reports/monitoring_dashboard.png`](reports/monitoring_dashboard.png) | Final monitoring scorecard |
 | [`reports/submission_manifest.json`](reports/submission_manifest.json) | Guarded export manifest |
-| `reports/checkpoints/` | Day-by-day checkpoints |
 | [`reports/EVIDENCE_CARD.md`](reports/EVIDENCE_CARD.md) | Concise instructor evidence card |
 | [`LEARNING_PROGRESS.md`](LEARNING_PROGRESS.md) | Setup, Day 1, Day 2, and final-delivery progress |
 
